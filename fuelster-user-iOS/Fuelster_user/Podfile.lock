@@ -1,0 +1,32 @@
+PODS:
+  - CardIO (5.4.1)
+  - Flurry-iOS-SDK/FlurrySDK (7.6.6)
+  - GoogleMaps (2.0.1):
+    - GoogleMaps/Maps (= 2.0.1)
+  - GoogleMaps/Base (2.0.1)
+  - GoogleMaps/Maps (2.0.1):
+    - GoogleMaps/Base (= 2.0.1)
+  - GooglePlaces (2.0.1):
+    - GoogleMaps/Base (= 2.0.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - Stripe (8.0.7)
+
+DEPENDENCIES:
+  - CardIO
+  - Flurry-iOS-SDK/FlurrySDK
+  - GoogleMaps
+  - GooglePlaces
+  - SDWebImage (~> 3.8)
+  - Stripe
+
+SPEC CHECKSUMS:
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  Flurry-iOS-SDK: 97bbeec09cca666c2f1772f6e161c4f8ccff611e
+  GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
+  GooglePlaces: 72fab1d1651c6df0322f2aad245ffb15b80d3c56
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Stripe: 2bb9646115745d0ee8c7799e6872c57ba5dc6cc5
+
+COCOAPODS: 0.39.0

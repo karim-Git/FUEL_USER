@@ -1,0 +1,17 @@
+# Pods for Fuelster
+
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, ‘8.0’
+use_frameworks!
+target 'Fuelster' do
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
+    pod 'SDWebImage', '~>3.8'
+    pod 'Stripe'
+    pod 'Flurry-iOS-SDK/FlurrySDK'
+    pod 'CardIO'
+
+
+end

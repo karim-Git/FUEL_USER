@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardScanIOView" customModule="Fuelster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsB-j3-moU">
+                    <rect key="frame" x="48" y="508" width="225" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ayB-pL-I19"/>
+                        <constraint firstAttribute="width" constant="225" id="jdb-JM-EPN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelCardScanAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="19o-8a-IAp"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtf-ss-WGI" customClass="CardIOView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="487"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dtf-ss-WGI" secondAttribute="trailing" id="eoM-3a-RmY"/>
+                <constraint firstItem="dtf-ss-WGI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h8L-fa-BtV"/>
+                <constraint firstItem="dtf-ss-WGI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="j74-js-cRV"/>
+                <constraint firstItem="EsB-j3-moU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="msc-JE-lyw"/>
+                <constraint firstItem="EsB-j3-moU" firstAttribute="top" secondItem="dtf-ss-WGI" secondAttribute="bottom" constant="21" id="ofB-9V-dnc"/>
+                <constraint firstAttribute="bottom" secondItem="EsB-j3-moU" secondAttribute="bottom" constant="20" id="x5C-JQ-IMU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="EsB-j3-moU" id="re4-hM-g2Q"/>
+                <outlet property="cardIOView" destination="dtf-ss-WGI" id="Yhe-Uw-fDF"/>
+            </connections>
+            <point key="canvasLocation" x="346" y="301"/>
+        </view>
+    </objects>
+</document>

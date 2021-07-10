@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImagePreview" customModule="Fuelster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yfK-1G-qju">
+                    <rect key="frame" x="25" y="148" width="270" height="271"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yfK-1G-qju" secondAttribute="height" multiplier="240:241" id="96r-KL-TUz"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4C-mk-v5d">
+                    <rect key="frame" x="25" y="120" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="hdk-hT-o0A"/>
+                        <constraint firstAttribute="height" constant="20" id="oOC-zh-GEb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" backgroundImage="WhiteClose">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeImageAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="FLO-R6-dcp"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXd-zs-1kW" customClass="PaddingLabel">
+                    <rect key="frame" x="45" y="379" width="230" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rKn-YX-Iaw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="iXd-zs-1kW" firstAttribute="trailing" secondItem="yfK-1G-qju" secondAttribute="trailing" constant="-20" id="KME-BR-tTh"/>
+                <constraint firstItem="yfK-1G-qju" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="PSI-74-z0B"/>
+                <constraint firstAttribute="trailing" secondItem="yfK-1G-qju" secondAttribute="trailing" constant="25" id="PZj-jV-e7t"/>
+                <constraint firstItem="iXd-zs-1kW" firstAttribute="leading" secondItem="yfK-1G-qju" secondAttribute="leading" constant="20" id="d0z-PK-4nI"/>
+                <constraint firstItem="iXd-zs-1kW" firstAttribute="bottom" secondItem="yfK-1G-qju" secondAttribute="bottom" id="dXv-8m-GUu"/>
+                <constraint firstItem="yfK-1G-qju" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fzT-8p-Emj"/>
+                <constraint firstItem="yfK-1G-qju" firstAttribute="leading" secondItem="h4C-mk-v5d" secondAttribute="leading" id="m2P-lO-aqK"/>
+                <constraint firstItem="h4C-mk-v5d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="osV-Vu-kxv"/>
+            </constraints>
+            <connections>
+                <outlet property="centerImagePreview" destination="yfK-1G-qju" id="r2y-la-9kx"/>
+                <outlet property="infoLabel" destination="iXd-zs-1kW" id="8VA-Oz-yjZ"/>
+            </connections>
+            <point key="canvasLocation" x="366" y="282"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="WhiteClose" width="17" height="17"/>
+    </resources>
+</document>

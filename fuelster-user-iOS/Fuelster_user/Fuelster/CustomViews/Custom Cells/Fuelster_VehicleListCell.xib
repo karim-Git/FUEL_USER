@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Thin.ttf">
+            <string>Montserrat-Thin</string>
+            <string>Montserrat-Thin</string>
+            <string>Montserrat-Thin</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="Fuelster_VehicleListCell" customModule="Fuelster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9B-yq-2gw" userLabel="shadowView">
+                        <rect key="frame" x="0.0" y="126" width="320" height="3"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="Jmb-g3-EjF"/>
+                        </constraints>
+                    </view>
+                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ubm-Tc-nP7">
+                        <rect key="frame" x="15" y="15" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="JRC-Rn-x3N"/>
+                            <constraint firstAttribute="width" constant="55" id="euU-zD-mX8"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7h-6h-bqc">
+                        <rect key="frame" x="85" y="5" width="230" height="95"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8c-dI-b9v" userLabel="vehicleName">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfA-2d-gJ7">
+                                <rect key="frame" x="166" y="4" width="25" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="V0c-53-NLl"/>
+                                </constraints>
+                                <state key="normal" image="Edit_Vehicle"/>
+                                <connections>
+                                    <action selector="editButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nVj-eY-OVy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2R-lM-lc2">
+                                <rect key="frame" x="201" y="4" width="25" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="F83-yT-9LS"/>
+                                </constraints>
+                                <state key="normal" image="Delete_vehicle"/>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aKt-mK-ILf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vf-us-IZh" userLabel="vehicleModel">
+                                <rect key="frame" x="0.0" y="65" width="230" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Thin" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDR-R9-yjf" userLabel="vehicleNo">
+                                <rect key="frame" x="0.0" y="30" width="230" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Thin" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T2R-lM-lc2" firstAttribute="leading" secondItem="lfA-2d-gJ7" secondAttribute="trailing" constant="10" id="10l-oi-F5v"/>
+                            <constraint firstItem="lfA-2d-gJ7" firstAttribute="top" secondItem="c7h-6h-bqc" secondAttribute="top" constant="4" id="4aP-LX-1DU"/>
+                            <constraint firstItem="I8c-dI-b9v" firstAttribute="top" secondItem="c7h-6h-bqc" secondAttribute="top" id="6OT-pz-gZa"/>
+                            <constraint firstAttribute="trailing" secondItem="IDR-R9-yjf" secondAttribute="trailing" id="99r-Ld-3Gy"/>
+                            <constraint firstAttribute="bottom" secondItem="1Vf-us-IZh" secondAttribute="bottom" id="9Mv-3u-wEd"/>
+                            <constraint firstItem="IDR-R9-yjf" firstAttribute="top" secondItem="I8c-dI-b9v" secondAttribute="bottom" id="APg-dE-O4y"/>
+                            <constraint firstItem="IDR-R9-yjf" firstAttribute="leading" secondItem="c7h-6h-bqc" secondAttribute="leading" id="BIH-za-XN1"/>
+                            <constraint firstAttribute="trailing" secondItem="1Vf-us-IZh" secondAttribute="trailing" id="BSM-Dr-jaX"/>
+                            <constraint firstAttribute="trailing" secondItem="I8c-dI-b9v" secondAttribute="trailing" constant="60" id="BcA-6g-bLF"/>
+                            <constraint firstItem="1Vf-us-IZh" firstAttribute="height" secondItem="I8c-dI-b9v" secondAttribute="height" id="JeS-dy-cIf">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-10"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="95" id="Jwp-2X-5DX">
+                                <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="T2R-lM-lc2" secondAttribute="trailing" constant="4" id="Mkr-a8-5cD"/>
+                            <constraint firstItem="IDR-R9-yjf" firstAttribute="top" secondItem="lfA-2d-gJ7" secondAttribute="bottom" id="QlI-Rw-iLe"/>
+                            <constraint firstItem="IDR-R9-yjf" firstAttribute="top" secondItem="T2R-lM-lc2" secondAttribute="bottom" id="Yat-7P-upA"/>
+                            <constraint firstItem="T2R-lM-lc2" firstAttribute="top" secondItem="c7h-6h-bqc" secondAttribute="top" constant="4" id="a5f-EB-yLT"/>
+                            <constraint firstItem="IDR-R9-yjf" firstAttribute="height" secondItem="I8c-dI-b9v" secondAttribute="height" id="ax2-Z4-FAN">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-10"/>
+                            </constraint>
+                            <constraint firstItem="1Vf-us-IZh" firstAttribute="leading" secondItem="c7h-6h-bqc" secondAttribute="leading" id="lnh-Ih-zgV"/>
+                            <constraint firstItem="I8c-dI-b9v" firstAttribute="leading" secondItem="c7h-6h-bqc" secondAttribute="leading" id="qWU-yg-Ef4"/>
+                            <constraint firstItem="1Vf-us-IZh" firstAttribute="top" secondItem="IDR-R9-yjf" secondAttribute="bottom" constant="5" id="zVr-qj-mVp">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJG-YD-B2Y" userLabel="creditCardContainerView">
+                        <rect key="frame" x="80" y="104" width="235" height="30"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igW-fd-d4l" customClass="RBATextField">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Thin" family="Montserrat" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTl-Wc-ZHZ">
+                                <rect key="frame" x="0.0" y="0.0" width="235" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="creditCardButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mhw-0J-A1j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR2-z8-veO">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="XDG-XJ-60K">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="130"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="12"/>
+                                <state key="normal" title="Click To Add Card" backgroundImage="PlainButton">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XDG-XJ-60K"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="XDG-XJ-60K"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="creditCardButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="isx-ug-Kpm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UR2-z8-veO" firstAttribute="leading" secondItem="pJG-YD-B2Y" secondAttribute="leading" id="0R9-5s-CRC"/>
+                            <constraint firstAttribute="trailing" secondItem="jTl-Wc-ZHZ" secondAttribute="trailing" id="7PW-cr-0Sh"/>
+                            <constraint firstAttribute="bottom" secondItem="UR2-z8-veO" secondAttribute="bottom" id="LGq-8g-8g8"/>
+                            <constraint firstAttribute="height" constant="30" id="MVQ-gT-Rag">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="jTl-Wc-ZHZ" firstAttribute="top" secondItem="pJG-YD-B2Y" secondAttribute="top" id="N2J-JQ-L9S"/>
+                            <constraint firstAttribute="bottom" secondItem="igW-fd-d4l" secondAttribute="bottom" id="U5W-ds-69H"/>
+                            <constraint firstItem="jTl-Wc-ZHZ" firstAttribute="leading" secondItem="pJG-YD-B2Y" secondAttribute="leading" id="Ub2-Ro-Dy7"/>
+                            <constraint firstItem="UR2-z8-veO" firstAttribute="top" secondItem="pJG-YD-B2Y" secondAttribute="top" id="aFJ-eN-eHa"/>
+                            <constraint firstItem="igW-fd-d4l" firstAttribute="leading" secondItem="pJG-YD-B2Y" secondAttribute="leading" id="bgt-xv-Ox5"/>
+                            <constraint firstItem="igW-fd-d4l" firstAttribute="top" secondItem="pJG-YD-B2Y" secondAttribute="top" id="mEh-xK-X0u"/>
+                            <constraint firstAttribute="trailing" secondItem="igW-fd-d4l" secondAttribute="trailing" id="v9f-Fq-aXC"/>
+                            <constraint firstAttribute="bottom" secondItem="jTl-Wc-ZHZ" secondAttribute="bottom" id="zaI-eB-8G3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="igW-fd-d4l"/>
+                                <exclude reference="jTl-Wc-ZHZ"/>
+                                <exclude reference="UR2-z8-veO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="U5W-ds-69H"/>
+                                <exclude reference="bgt-xv-Ox5"/>
+                                <exclude reference="mEh-xK-X0u"/>
+                                <exclude reference="v9f-Fq-aXC"/>
+                                <exclude reference="0R9-5s-CRC"/>
+                                <exclude reference="LGq-8g-8g8"/>
+                                <exclude reference="aFJ-eN-eHa"/>
+                                <exclude reference="7PW-cr-0Sh"/>
+                                <exclude reference="N2J-JQ-L9S"/>
+                                <exclude reference="Ub2-Ro-Dy7"/>
+                                <exclude reference="zaI-eB-8G3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="igW-fd-d4l"/>
+                                <include reference="jTl-Wc-ZHZ"/>
+                                <include reference="UR2-z8-veO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="U5W-ds-69H"/>
+                                <include reference="bgt-xv-Ox5"/>
+                                <include reference="mEh-xK-X0u"/>
+                                <include reference="v9f-Fq-aXC"/>
+                                <include reference="0R9-5s-CRC"/>
+                                <include reference="LGq-8g-8g8"/>
+                                <include reference="aFJ-eN-eHa"/>
+                                <include reference="7PW-cr-0Sh"/>
+                                <include reference="N2J-JQ-L9S"/>
+                                <include reference="Ub2-Ro-Dy7"/>
+                                <include reference="zaI-eB-8G3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="c7h-6h-bqc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="2vZ-EX-9H2"/>
+                    <constraint firstAttribute="trailing" secondItem="pJG-YD-B2Y" secondAttribute="trailing" constant="5" id="4D3-fw-OYg"/>
+                    <constraint firstItem="h9B-yq-2gw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7iS-xZ-ZNi"/>
+                    <constraint firstAttribute="trailing" secondItem="c7h-6h-bqc" secondAttribute="trailing" constant="5" id="DL6-Dz-uDi"/>
+                    <constraint firstAttribute="bottom" secondItem="h9B-yq-2gw" secondAttribute="bottom" id="Tl2-27-KqB"/>
+                    <constraint firstItem="Ubm-Tc-nP7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="by4-DY-KeF"/>
+                    <constraint firstAttribute="bottom" secondItem="pJG-YD-B2Y" secondAttribute="bottom" constant="10" id="des-9F-n5f"/>
+                    <constraint firstItem="pJG-YD-B2Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="pRj-Kk-YH4"/>
+                    <constraint firstItem="Ubm-Tc-nP7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="wPO-tq-7Y9"/>
+                    <constraint firstItem="c7h-6h-bqc" firstAttribute="leading" secondItem="Ubm-Tc-nP7" secondAttribute="trailing" constant="15" id="xHc-02-6Df"/>
+                    <constraint firstAttribute="trailing" secondItem="h9B-yq-2gw" secondAttribute="trailing" id="xsA-ge-uUo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clickToAddCardBtn" destination="UR2-z8-veO" id="euD-4o-jkn"/>
+                <outlet property="creditCardTextField" destination="igW-fd-d4l" id="W7h-hb-d0g"/>
+                <outlet property="creditCardView" destination="pJG-YD-B2Y" id="YPX-Hc-njc"/>
+                <outlet property="deleteButton" destination="T2R-lM-lc2" id="leC-13-uMe"/>
+                <outlet property="editButton" destination="lfA-2d-gJ7" id="Deq-6X-Q4o"/>
+                <outlet property="paymentButton" destination="jTl-Wc-ZHZ" id="pf4-fK-FdG"/>
+                <outlet property="shadowView" destination="h9B-yq-2gw" id="N37-jb-xn9"/>
+                <outlet property="vehicleIconView" destination="Ubm-Tc-nP7" id="E0b-Iu-B6I"/>
+                <outlet property="vehicleModelLbl" destination="1Vf-us-IZh" id="EFF-Cq-GVa"/>
+                <outlet property="vehicleNameLbl" destination="I8c-dI-b9v" id="zAZ-Iu-Gl9"/>
+                <outlet property="vehicleNumberLbl" destination="IDR-R9-yjf" id="fY7-ee-QkF"/>
+            </connections>
+            <point key="canvasLocation" x="159" y="113.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Delete_vehicle" width="15" height="20"/>
+        <image name="Edit_Vehicle" width="20" height="20"/>
+        <image name="PlainButton" width="85" height="30"/>
+    </resources>
+</document>

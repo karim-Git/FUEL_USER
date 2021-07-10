@@ -1,0 +1,1218 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1434FCBF1D6B1B90000F744F /* Fuelster_VehiclesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434FCBE1D6B1B90000F744F /* Fuelster_VehiclesListVC.swift */; };
+		1434FCC11D6B1DA4000F744F /* Fuelster_Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1434FCC01D6B1DA4000F744F /* Fuelster_Vehicle.storyboard */; };
+		14F146241D6C2BEF000F1814 /* Fuelster_VehicleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F146221D6C2BEF000F1814 /* Fuelster_VehicleListCell.swift */; };
+		14F146251D6C2BEF000F1814 /* Fuelster_VehicleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F146231D6C2BEF000F1814 /* Fuelster_VehicleListCell.xib */; };
+		22F555481D6B2242009EB9DF /* PaymentCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F555471D6B2242009EB9DF /* PaymentCard.storyboard */; };
+		22F5554C1D6B24F7009EB9DF /* PaymentCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F5554B1D6B24F7009EB9DF /* PaymentCardsVC.swift */; };
+		22F555541D6C559C009EB9DF /* CardsCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F555531D6C559C009EB9DF /* CardsCustomCell.swift */; };
+		22F555561D6C55E4009EB9DF /* CardsCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F555551D6C55E4009EB9DF /* CardsCustomCell.xib */; };
+		2BBF2513BF2548408653E976 /* Pods_Fuelster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8511F802E6D9A7D81EB311 /* Pods_Fuelster.framework */; };
+		939F100771BA0A72A7E0D720 /* Pods_FuelsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE762CE8A20068ADE334310 /* Pods_FuelsterUITests.framework */; };
+		B3A6857B0E507122BC15B71C /* Pods_FuelsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1EA5EA54E35D6F7880BE7F /* Pods_FuelsterTests.framework */; };
+		CF06B0181D6B1E7800ABD9EF /* Fuelster_MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06B0171D6B1E7800ABD9EF /* Fuelster_MainVC.swift */; };
+		CF234E1B1D59BA6D00DC0AE6 /* TextField_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF234E181D59BA6D00DC0AE6 /* TextField_ext.swift */; };
+		CF234E1C1D59BA6D00DC0AE6 /* View_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF234E191D59BA6D00DC0AE6 /* View_ext.swift */; };
+		CF234E1D1D59BA6D00DC0AE6 /* ViewController_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF234E1A1D59BA6D00DC0AE6 /* ViewController_ext.swift */; };
+		CF234E211D59BB0100DC0AE6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF234E201D59BB0100DC0AE6 /* Model.swift */; };
+		CF234E261D59BB1B00DC0AE6 /* NetworkWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF234E231D59BB1B00DC0AE6 /* NetworkWrapper.m */; };
+		CF234E271D59BB1B00DC0AE6 /* ServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF234E251D59BB1B00DC0AE6 /* ServiceModel.m */; };
+		CF234E321D59BE3C00DC0AE6 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = CF234E311D59BE3C00DC0AE6 /* UIDevice+Hardware.m */; };
+		CF234E3D1D59D2DD00DC0AE6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF234E3C1D59D2DD00DC0AE6 /* MBProgressHUD.m */; };
+		CF4149291D66F74D0046584C /* Fuelster_ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4149281D66F74D0046584C /* Fuelster_ForgotPasswordVC.swift */; };
+		CF41492B1D66FAA80046584C /* Fuelster_MainNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41492A1D66FAA80046584C /* Fuelster_MainNavigationVC.swift */; };
+		CF41492D1D66FC320046584C /* Fuelster_UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41492C1D66FC320046584C /* Fuelster_UserProfileVC.swift */; };
+		CF4149351D66FF430046584C /* Fuelster_MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4149341D66FF430046584C /* Fuelster_MenuVC.swift */; };
+		CF4558181D6437BB0079AD2E /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4558171D6437BB0079AD2E /* VehicleModel.swift */; };
+		CF45581A1D6437CE0079AD2E /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4558191D6437CE0079AD2E /* Vehicle.swift */; };
+		CF45581C1D6440990079AD2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF45581B1D6440990079AD2E /* User.swift */; };
+		CF45581E1D6440B00079AD2E /* CardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF45581D1D6440B00079AD2E /* CardsModel.swift */; };
+		CF4558201D6440C20079AD2E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF45581F1D6440C20079AD2E /* Card.swift */; };
+		CF4558231D648C5B0079AD2E /* NSMutableURLRequest+NSMutableRequestHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4558221D648C5B0079AD2E /* NSMutableURLRequest+NSMutableRequestHeaders.m */; };
+		CF4657FC1D58666B0034CBE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4657FB1D58666B0034CBE5 /* AppDelegate.swift */; };
+		CF4658011D58666B0034CBE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4657FF1D58666B0034CBE5 /* Main.storyboard */; };
+		CF4658031D58666B0034CBE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4658021D58666B0034CBE5 /* Assets.xcassets */; };
+		CF4658061D58666B0034CBE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4658041D58666B0034CBE5 /* LaunchScreen.storyboard */; };
+		CF4658111D58666B0034CBE5 /* FuelsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4658101D58666B0034CBE5 /* FuelsterTests.swift */; };
+		CF46581C1D58666B0034CBE5 /* FuelsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46581B1D58666B0034CBE5 /* FuelsterUITests.swift */; };
+		CF4658341D586ABC0034CBE5 /* Fuelster_BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4658331D586ABC0034CBE5 /* Fuelster_BaseViewController.swift */; };
+		CF54B9261D59DF2D00A96B50 /* Fuelster_Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54B9251D59DF2D00A96B50 /* Fuelster_Constants.swift */; };
+		CF54B92E1D59DF9500A96B50 /* O1AlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = CF54B9281D59DF9500A96B50 /* O1AlertAction.m */; };
+		CF54B92F1D59DF9500A96B50 /* O1AlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF54B92A1D59DF9500A96B50 /* O1AlertController.m */; };
+		CF54B9301D59DF9500A96B50 /* O1LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF54B92D1D59DF9500A96B50 /* O1LocationManager.m */; };
+		CF54B9321D59E00900A96B50 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF54B9311D59E00900A96B50 /* CoreLocation.framework */; };
+		CF54B9341D59E01200A96B50 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF54B9331D59E01200A96B50 /* MapKit.framework */; };
+		CF54B9361D59E02600A96B50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF54B9351D59E02600A96B50 /* CoreGraphics.framework */; };
+		CF54B93A1D59E1CC00A96B50 /* Fuelster_LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54B9391D59E1CC00A96B50 /* Fuelster_LoginVC.swift */; };
+		CF54B93C1D59E1F600A96B50 /* RBAAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54B93B1D59E1F600A96B50 /* RBAAlertController.swift */; };
+		CF54B93E1D59E2E600A96B50 /* Fuelster_RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54B93D1D59E2E600A96B50 /* Fuelster_RegistrationVC.swift */; };
+		CF54B9401D59ED1F00A96B50 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54B93F1D59ED1F00A96B50 /* SlideMenuController.swift */; };
+		CF6EF97E1D65930D004CBC05 /* KeychainOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EF9791D65930D004CBC05 /* KeychainOptions.swift */; };
+		CF6EF97F1D65930D004CBC05 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EF97A1D65930D004CBC05 /* KeychainWrapper.swift */; };
+		CF6EF9801D65930D004CBC05 /* KeychainWrapper+Experimental.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EF97B1D65930D004CBC05 /* KeychainWrapper+Experimental.swift */; };
+		CF6EF9811D65930D004CBC05 /* RBAKeyChainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EF97C1D65930D004CBC05 /* RBAKeyChainWrapper.swift */; };
+		CF6EF9871D659458004CBC05 /* ASStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6EF9861D659458004CBC05 /* ASStarRatingView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF6EF98E1D659467004CBC05 /* half_selected_star.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6EF9881D659467004CBC05 /* half_selected_star.png */; };
+		CF6EF98F1D659467004CBC05 /* half_selected_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6EF9891D659467004CBC05 /* half_selected_star@2x.png */; };
+		CF6EF9901D659467004CBC05 /* not_selected_star.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6EF98A1D659467004CBC05 /* not_selected_star.png */; };
+		CF6EF9911D659467004CBC05 /* not_selected_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6EF98B1D659467004CBC05 /* not_selected_star@2x.png */; };
+		CF6EF9921D659467004CBC05 /* selected_star.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6EF98C1D659467004CBC05 /* selected_star.png */; };
+		CF6EF9931D659467004CBC05 /* selected_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6EF98D1D659467004CBC05 /* selected_star@2x.png */; };
+		CF6EF99E1D65C0E8004CBC05 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6EF99B1D65C0E8004CBC05 /* TPKeyboardAvoidingScrollView.m */; };
+		CF6EF99F1D65C0E8004CBC05 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6EF99D1D65C0E8004CBC05 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		CF7B2FC41D6C2DC500B786E7 /* Fuelster_SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B2FC31D6C2DC500B786E7 /* Fuelster_SettingsVC.swift */; };
+		CF7B2FC81D6C415500B786E7 /* Fuelster_OrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B2FC71D6C415500B786E7 /* Fuelster_OrderHistoryVC.swift */; };
+		CF7B2FCB1D6C42E600B786E7 /* OrdersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B2FCA1D6C42E600B786E7 /* OrdersModel.swift */; };
+		CF7B2FCD1D6C431000B786E7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B2FCC1D6C431000B786E7 /* Order.swift */; };
+		CF7B2FD01D6C4C1D00B786E7 /* OrderHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B2FCE1D6C4C1D00B786E7 /* OrderHistoryCell.swift */; };
+		CF7B2FD11D6C4C1D00B786E7 /* OrderHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF7B2FCF1D6C4C1D00B786E7 /* OrderHistoryCell.xib */; };
+		CF7B2FD31D6C5E3200B786E7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7B2FD21D6C5E3200B786E7 /* QuartzCore.framework */; };
+		CF7B2FD51D6C61AC00B786E7 /* Fuelster_HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B2FD41D6C61AC00B786E7 /* Fuelster_HelpVC.swift */; };
+		CF7B3C851D5B3F8400747930 /* GoogleMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7B3C841D5B3F8400747930 /* GoogleMapView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF46580D1D58666B0034CBE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4657F01D58666B0034CBE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4657F71D58666B0034CBE5;
+			remoteInfo = Fuelster;
+		};
+		CF4658181D58666B0034CBE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4657F01D58666B0034CBE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4657F71D58666B0034CBE5;
+			remoteInfo = Fuelster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D3190709AC069820CF0F92B /* Pods-FuelsterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelsterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelsterUITests/Pods-FuelsterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		11AB35466592E3707D52D089 /* Pods-FuelsterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelsterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelsterUITests/Pods-FuelsterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1434FCBE1D6B1B90000F744F /* Fuelster_VehiclesListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuelster_VehiclesListVC.swift; sourceTree = "<group>"; };
+		1434FCC01D6B1DA4000F744F /* Fuelster_Vehicle.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Fuelster_Vehicle.storyboard; sourceTree = "<group>"; };
+		14F146221D6C2BEF000F1814 /* Fuelster_VehicleListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuelster_VehicleListCell.swift; sourceTree = "<group>"; };
+		14F146231D6C2BEF000F1814 /* Fuelster_VehicleListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Fuelster_VehicleListCell.xib; sourceTree = "<group>"; };
+		16FE5EC0A981ABD0B2F4628F /* Pods-FuelsterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelsterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelsterTests/Pods-FuelsterTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F1EA5EA54E35D6F7880BE7F /* Pods_FuelsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F555471D6B2242009EB9DF /* PaymentCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PaymentCard.storyboard; sourceTree = "<group>"; };
+		22F5554B1D6B24F7009EB9DF /* PaymentCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentCardsVC.swift; path = ViewControllers/PaymentCards/PaymentCardsVC.swift; sourceTree = "<group>"; };
+		22F555531D6C559C009EB9DF /* CardsCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsCustomCell.swift; path = ViewControllers/PaymentCards/CardsCustomCell.swift; sourceTree = "<group>"; };
+		22F555551D6C55E4009EB9DF /* CardsCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardsCustomCell.xib; sourceTree = "<group>"; };
+		296710C2BDE860E647776D5B /* Pods-FuelsterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelsterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelsterTests/Pods-FuelsterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E8511F802E6D9A7D81EB311 /* Pods_Fuelster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fuelster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F68564165C54A6C4B57A111 /* Pods-Fuelster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuelster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuelster/Pods-Fuelster.release.xcconfig"; sourceTree = "<group>"; };
+		AE111D56FD98083A79576313 /* Pods-Fuelster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuelster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuelster/Pods-Fuelster.debug.xcconfig"; sourceTree = "<group>"; };
+		CF06B0171D6B1E7800ABD9EF /* Fuelster_MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuelster_MainVC.swift; sourceTree = "<group>"; };
+		CF234E181D59BA6D00DC0AE6 /* TextField_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextField_ext.swift; path = Extensions/Swift/TextField_ext.swift; sourceTree = "<group>"; };
+		CF234E191D59BA6D00DC0AE6 /* View_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View_ext.swift; path = Extensions/Swift/View_ext.swift; sourceTree = "<group>"; };
+		CF234E1A1D59BA6D00DC0AE6 /* ViewController_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController_ext.swift; path = Extensions/Swift/ViewController_ext.swift; sourceTree = "<group>"; };
+		CF234E201D59BB0100DC0AE6 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = Models/Model/Model.swift; sourceTree = "<group>"; };
+		CF234E221D59BB1B00DC0AE6 /* NetworkWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkWrapper.h; path = NetWorkWrapper/NetworkWrapper.h; sourceTree = "<group>"; };
+		CF234E231D59BB1B00DC0AE6 /* NetworkWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkWrapper.m; path = NetWorkWrapper/NetworkWrapper.m; sourceTree = "<group>"; };
+		CF234E241D59BB1B00DC0AE6 /* ServiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceModel.h; path = NetWorkWrapper/ServiceModel.h; sourceTree = "<group>"; };
+		CF234E251D59BB1B00DC0AE6 /* ServiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceModel.m; path = NetWorkWrapper/ServiceModel.m; sourceTree = "<group>"; };
+		CF234E301D59BE3C00DC0AE6 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+Hardware.h"; path = "Extensions/Obj-C/UIDevice+Hardware.h"; sourceTree = "<group>"; };
+		CF234E311D59BE3C00DC0AE6 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+Hardware.m"; path = "Extensions/Obj-C/UIDevice+Hardware.m"; sourceTree = "<group>"; };
+		CF234E381D59C19100DC0AE6 /* Fuelster-Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fuelster-Swift.h"; sourceTree = "<group>"; };
+		CF234E3A1D59D1EF00DC0AE6 /* Fuelster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fuelster-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF234E3B1D59D2DD00DC0AE6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "CustomViews/Obj-C/MBProgressHud/MBProgressHUD.h"; sourceTree = "<group>"; };
+		CF234E3C1D59D2DD00DC0AE6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "CustomViews/Obj-C/MBProgressHud/MBProgressHUD.m"; sourceTree = "<group>"; };
+		CF4149281D66F74D0046584C /* Fuelster_ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_ForgotPasswordVC.swift; path = ViewControllers/User/Fuelster_ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		CF41492A1D66FAA80046584C /* Fuelster_MainNavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_MainNavigationVC.swift; path = ViewControllers/Fuelster_MainNavigationVC.swift; sourceTree = "<group>"; };
+		CF41492C1D66FC320046584C /* Fuelster_UserProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_UserProfileVC.swift; path = ViewControllers/User/Fuelster_UserProfileVC.swift; sourceTree = "<group>"; };
+		CF4149341D66FF430046584C /* Fuelster_MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_MenuVC.swift; path = ViewControllers/User/Fuelster_MenuVC.swift; sourceTree = "<group>"; };
+		CF4558171D6437BB0079AD2E /* VehicleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VehicleModel.swift; path = Models/Vehicles/VehicleModel.swift; sourceTree = "<group>"; };
+		CF4558191D6437CE0079AD2E /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = Models/Vehicles/Vehicle.swift; sourceTree = "<group>"; };
+		CF45581B1D6440990079AD2E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User/User.swift; sourceTree = "<group>"; };
+		CF45581D1D6440B00079AD2E /* CardsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsModel.swift; path = Models/Cards/CardsModel.swift; sourceTree = "<group>"; };
+		CF45581F1D6440C20079AD2E /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Models/Cards/Card.swift; sourceTree = "<group>"; };
+		CF4558211D648C5B0079AD2E /* NSMutableURLRequest+NSMutableRequestHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+NSMutableRequestHeaders.h"; path = "Extensions/Obj-C/NSMutableURLRequest+NSMutableRequestHeaders.h"; sourceTree = "<group>"; };
+		CF4558221D648C5B0079AD2E /* NSMutableURLRequest+NSMutableRequestHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+NSMutableRequestHeaders.m"; path = "Extensions/Obj-C/NSMutableURLRequest+NSMutableRequestHeaders.m"; sourceTree = "<group>"; };
+		CF4657F81D58666B0034CBE5 /* Fuelster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuelster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4657FB1D58666B0034CBE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF4658001D58666B0034CBE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF4658021D58666B0034CBE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF4658051D58666B0034CBE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF4658071D58666B0034CBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF46580C1D58666B0034CBE5 /* FuelsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4658101D58666B0034CBE5 /* FuelsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsterTests.swift; sourceTree = "<group>"; };
+		CF4658121D58666B0034CBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4658171D58666B0034CBE5 /* FuelsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuelsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF46581B1D58666B0034CBE5 /* FuelsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelsterUITests.swift; sourceTree = "<group>"; };
+		CF46581D1D58666B0034CBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4658331D586ABC0034CBE5 /* Fuelster_BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_BaseViewController.swift; path = ViewControllers/Fuelster_BaseViewController.swift; sourceTree = "<group>"; };
+		CF54B9251D59DF2D00A96B50 /* Fuelster_Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fuelster_Constants.swift; sourceTree = "<group>"; };
+		CF54B9271D59DF9500A96B50 /* O1AlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = O1AlertAction.h; path = "CustomViews/Obj-C/O1AlertAction.h"; sourceTree = "<group>"; };
+		CF54B9281D59DF9500A96B50 /* O1AlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = O1AlertAction.m; path = "CustomViews/Obj-C/O1AlertAction.m"; sourceTree = "<group>"; };
+		CF54B9291D59DF9500A96B50 /* O1AlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = O1AlertController.h; path = "CustomViews/Obj-C/O1AlertController.h"; sourceTree = "<group>"; };
+		CF54B92A1D59DF9500A96B50 /* O1AlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = O1AlertController.m; path = "CustomViews/Obj-C/O1AlertController.m"; sourceTree = "<group>"; };
+		CF54B92B1D59DF9500A96B50 /* O1Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = O1Helper.h; path = "CustomViews/Obj-C/O1Helper.h"; sourceTree = "<group>"; };
+		CF54B92C1D59DF9500A96B50 /* O1LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = O1LocationManager.h; path = "CustomViews/Obj-C/O1LocationManager.h"; sourceTree = "<group>"; };
+		CF54B92D1D59DF9500A96B50 /* O1LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = O1LocationManager.m; path = "CustomViews/Obj-C/O1LocationManager.m"; sourceTree = "<group>"; };
+		CF54B9311D59E00900A96B50 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CF54B9331D59E01200A96B50 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CF54B9351D59E02600A96B50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF54B9391D59E1CC00A96B50 /* Fuelster_LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_LoginVC.swift; path = ViewControllers/User/Fuelster_LoginVC.swift; sourceTree = "<group>"; };
+		CF54B93B1D59E1F600A96B50 /* RBAAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBAAlertController.swift; path = ViewControllers/RBAAlertController.swift; sourceTree = "<group>"; };
+		CF54B93D1D59E2E600A96B50 /* Fuelster_RegistrationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_RegistrationVC.swift; path = ViewControllers/User/Fuelster_RegistrationVC.swift; sourceTree = "<group>"; };
+		CF54B93F1D59ED1F00A96B50 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		CF6EF9791D65930D004CBC05 /* KeychainOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainOptions.swift; path = "ThirdParty/KeyChain Wrapper/KeychainOptions.swift"; sourceTree = "<group>"; };
+		CF6EF97A1D65930D004CBC05 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = "ThirdParty/KeyChain Wrapper/KeychainWrapper.swift"; sourceTree = "<group>"; };
+		CF6EF97B1D65930D004CBC05 /* KeychainWrapper+Experimental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "KeychainWrapper+Experimental.swift"; path = "ThirdParty/KeyChain Wrapper/KeychainWrapper+Experimental.swift"; sourceTree = "<group>"; };
+		CF6EF97C1D65930D004CBC05 /* RBAKeyChainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBAKeyChainWrapper.swift; path = "ThirdParty/KeyChain Wrapper/RBAKeyChainWrapper.swift"; sourceTree = "<group>"; };
+		CF6EF97D1D65930D004CBC05 /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftKeychainWrapper.h; path = "ThirdParty/KeyChain Wrapper/SwiftKeychainWrapper.h"; sourceTree = "<group>"; };
+		CF6EF9851D659458004CBC05 /* ASStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASStarRatingView.h; path = "CustomViews/Obj-C/ASStarRatingView/ASStarRatingView.h"; sourceTree = "<group>"; };
+		CF6EF9861D659458004CBC05 /* ASStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASStarRatingView.m; path = "CustomViews/Obj-C/ASStarRatingView/ASStarRatingView.m"; sourceTree = "<group>"; };
+		CF6EF9881D659467004CBC05 /* half_selected_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = half_selected_star.png; path = "CustomViews/Obj-C/ASStarRatingView/stars/half_selected_star.png"; sourceTree = "<group>"; };
+		CF6EF9891D659467004CBC05 /* half_selected_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "half_selected_star@2x.png"; path = "CustomViews/Obj-C/ASStarRatingView/stars/half_selected_star@2x.png"; sourceTree = "<group>"; };
+		CF6EF98A1D659467004CBC05 /* not_selected_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = not_selected_star.png; path = "CustomViews/Obj-C/ASStarRatingView/stars/not_selected_star.png"; sourceTree = "<group>"; };
+		CF6EF98B1D659467004CBC05 /* not_selected_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "not_selected_star@2x.png"; path = "CustomViews/Obj-C/ASStarRatingView/stars/not_selected_star@2x.png"; sourceTree = "<group>"; };
+		CF6EF98C1D659467004CBC05 /* selected_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selected_star.png; path = "CustomViews/Obj-C/ASStarRatingView/stars/selected_star.png"; sourceTree = "<group>"; };
+		CF6EF98D1D659467004CBC05 /* selected_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "selected_star@2x.png"; path = "CustomViews/Obj-C/ASStarRatingView/stars/selected_star@2x.png"; sourceTree = "<group>"; };
+		CF6EF99A1D65C0E8004CBC05 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = "CustomViews/Obj-C/keyboardScrollView/TPKeyboardAvoidingScrollView.h"; sourceTree = "<group>"; };
+		CF6EF99B1D65C0E8004CBC05 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = "CustomViews/Obj-C/keyboardScrollView/TPKeyboardAvoidingScrollView.m"; sourceTree = "<group>"; };
+		CF6EF99C1D65C0E8004CBC05 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "CustomViews/Obj-C/keyboardScrollView/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		CF6EF99D1D65C0E8004CBC05 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "CustomViews/Obj-C/keyboardScrollView/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		CF7B2FC31D6C2DC500B786E7 /* Fuelster_SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_SettingsVC.swift; path = ViewControllers/User/Fuelster_SettingsVC.swift; sourceTree = "<group>"; };
+		CF7B2FC71D6C415500B786E7 /* Fuelster_OrderHistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_OrderHistoryVC.swift; path = ViewControllers/Orders/Fuelster_OrderHistoryVC.swift; sourceTree = "<group>"; };
+		CF7B2FCA1D6C42E600B786E7 /* OrdersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrdersModel.swift; path = Models/Orders/OrdersModel.swift; sourceTree = "<group>"; };
+		CF7B2FCC1D6C431000B786E7 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Order.swift; path = Models/Orders/Order.swift; sourceTree = "<group>"; };
+		CF7B2FCE1D6C4C1D00B786E7 /* OrderHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderHistoryCell.swift; path = CustomViews/Swift/OrderHistoryCell.swift; sourceTree = "<group>"; };
+		CF7B2FCF1D6C4C1D00B786E7 /* OrderHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderHistoryCell.xib; path = CustomViews/Swift/OrderHistoryCell.xib; sourceTree = "<group>"; };
+		CF7B2FD21D6C5E3200B786E7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CF7B2FD41D6C61AC00B786E7 /* Fuelster_HelpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fuelster_HelpVC.swift; path = ViewControllers/User/Fuelster_HelpVC.swift; sourceTree = "<group>"; };
+		CF7B3C831D5B3F8400747930 /* GoogleMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoogleMapView.h; path = "CustomViews/Obj-C/GoogleMaps/GoogleMapView.h"; sourceTree = "<group>"; };
+		CF7B3C841D5B3F8400747930 /* GoogleMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoogleMapView.m; path = "CustomViews/Obj-C/GoogleMaps/GoogleMapView.m"; sourceTree = "<group>"; };
+		EDE762CE8A20068ADE334310 /* Pods_FuelsterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelsterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF4657F51D58666B0034CBE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7B2FD31D6C5E3200B786E7 /* QuartzCore.framework in Frameworks */,
+				CF54B9361D59E02600A96B50 /* CoreGraphics.framework in Frameworks */,
+				CF54B9341D59E01200A96B50 /* MapKit.framework in Frameworks */,
+				CF54B9321D59E00900A96B50 /* CoreLocation.framework in Frameworks */,
+				2BBF2513BF2548408653E976 /* Pods_Fuelster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4658091D58666B0034CBE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3A6857B0E507122BC15B71C /* Pods_FuelsterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4658141D58666B0034CBE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939F100771BA0A72A7E0D720 /* Pods_FuelsterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14F146211D6C2BB1000F1814 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				14F146221D6C2BEF000F1814 /* Fuelster_VehicleListCell.swift */,
+				14F146231D6C2BEF000F1814 /* Fuelster_VehicleListCell.xib */,
+			);
+			name = "Custom Cells";
+			path = "CustomViews/Custom Cells";
+			sourceTree = "<group>";
+		};
+		4155690C337024E4E7378682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B2FD21D6C5E3200B786E7 /* QuartzCore.framework */,
+				3E8511F802E6D9A7D81EB311 /* Pods_Fuelster.framework */,
+				1F1EA5EA54E35D6F7880BE7F /* Pods_FuelsterTests.framework */,
+				EDE762CE8A20068ADE334310 /* Pods_FuelsterUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E4FFB3988E2609BD6B9F3EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE111D56FD98083A79576313 /* Pods-Fuelster.debug.xcconfig */,
+				8F68564165C54A6C4B57A111 /* Pods-Fuelster.release.xcconfig */,
+				296710C2BDE860E647776D5B /* Pods-FuelsterTests.debug.xcconfig */,
+				16FE5EC0A981ABD0B2F4628F /* Pods-FuelsterTests.release.xcconfig */,
+				0D3190709AC069820CF0F92B /* Pods-FuelsterUITests.debug.xcconfig */,
+				11AB35466592E3707D52D089 /* Pods-FuelsterUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF234E091D599D6200DC0AE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF234E201D59BB0100DC0AE6 /* Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CF234E111D59B09B00DC0AE6 /* Obj-C */ = {
+			isa = PBXGroup;
+			children = (
+				CF6EF9A01D65C0EE004CBC05 /* keyboardScrollView */,
+				CF6EF9841D659440004CBC05 /* ASRatingView */,
+				CF7B3C3A1D5B032400747930 /* GoogleMaps */,
+				CF54B9271D59DF9500A96B50 /* O1AlertAction.h */,
+				CF54B9281D59DF9500A96B50 /* O1AlertAction.m */,
+				CF54B9291D59DF9500A96B50 /* O1AlertController.h */,
+				CF54B92A1D59DF9500A96B50 /* O1AlertController.m */,
+				CF54B92B1D59DF9500A96B50 /* O1Helper.h */,
+				CF54B92C1D59DF9500A96B50 /* O1LocationManager.h */,
+				CF54B92D1D59DF9500A96B50 /* O1LocationManager.m */,
+				CF46584F1D58945D0034CBE5 /* MBProgressHud */,
+			);
+			name = "Obj-C";
+			sourceTree = "<group>";
+		};
+		CF234E151D59BA4C00DC0AE6 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				14F146211D6C2BB1000F1814 /* Custom Cells */,
+				CF7B2FCE1D6C4C1D00B786E7 /* OrderHistoryCell.swift */,
+				CF7B2FCF1D6C4C1D00B786E7 /* OrderHistoryCell.xib */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		CF234E161D59BA5800DC0AE6 /* Obj-C */ = {
+			isa = PBXGroup;
+			children = (
+				CF234E301D59BE3C00DC0AE6 /* UIDevice+Hardware.h */,
+				CF234E311D59BE3C00DC0AE6 /* UIDevice+Hardware.m */,
+				CF4558211D648C5B0079AD2E /* NSMutableURLRequest+NSMutableRequestHeaders.h */,
+				CF4558221D648C5B0079AD2E /* NSMutableURLRequest+NSMutableRequestHeaders.m */,
+			);
+			name = "Obj-C";
+			sourceTree = "<group>";
+		};
+		CF234E171D59BA5E00DC0AE6 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				CF234E181D59BA6D00DC0AE6 /* TextField_ext.swift */,
+				CF234E191D59BA6D00DC0AE6 /* View_ext.swift */,
+				CF234E1A1D59BA6D00DC0AE6 /* ViewController_ext.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		CF4657EF1D58666B0034CBE5 = {
+			isa = PBXGroup;
+			children = (
+				CF54B9351D59E02600A96B50 /* CoreGraphics.framework */,
+				CF54B9331D59E01200A96B50 /* MapKit.framework */,
+				CF54B9311D59E00900A96B50 /* CoreLocation.framework */,
+				CF4657FA1D58666B0034CBE5 /* Fuelster */,
+				CF46580F1D58666B0034CBE5 /* FuelsterTests */,
+				CF46581A1D58666B0034CBE5 /* FuelsterUITests */,
+				CF4657F91D58666B0034CBE5 /* Products */,
+				7E4FFB3988E2609BD6B9F3EB /* Pods */,
+				4155690C337024E4E7378682 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF4657F91D58666B0034CBE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF4657F81D58666B0034CBE5 /* Fuelster.app */,
+				CF46580C1D58666B0034CBE5 /* FuelsterTests.xctest */,
+				CF4658171D58666B0034CBE5 /* FuelsterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF4657FA1D58666B0034CBE5 /* Fuelster */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B3C391D5B016B00747930 /* AppDelegate */,
+				CF4658451D5892BB0034CBE5 /* Bridging */,
+				CF4658291D5869920034CBE5 /* ViewControllers */,
+				CF46582C1D5869C70034CBE5 /* Models */,
+				CF46582B1D5869BD0034CBE5 /* NetWorkWrapper */,
+				CF46582F1D5869E80034CBE5 /* CustomViews */,
+				CF46582E1D5869DD0034CBE5 /* Extensions */,
+				CF46582A1D5869B20034CBE5 /* ThirdParty */,
+				CF46582D1D5869D40034CBE5 /* Frameworks */,
+				CF4658301D5869FC0034CBE5 /* Storyboard */,
+				CF4658021D58666B0034CBE5 /* Assets.xcassets */,
+				CF4658071D58666B0034CBE5 /* Info.plist */,
+			);
+			path = Fuelster;
+			sourceTree = "<group>";
+		};
+		CF46580F1D58666B0034CBE5 /* FuelsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF4658101D58666B0034CBE5 /* FuelsterTests.swift */,
+				CF4658121D58666B0034CBE5 /* Info.plist */,
+			);
+			path = FuelsterTests;
+			sourceTree = "<group>";
+		};
+		CF46581A1D58666B0034CBE5 /* FuelsterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF46581B1D58666B0034CBE5 /* FuelsterUITests.swift */,
+				CF46581D1D58666B0034CBE5 /* Info.plist */,
+			);
+			path = FuelsterUITests;
+			sourceTree = "<group>";
+		};
+		CF4658291D5869920034CBE5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B3C381D5B016000747930 /* Base */,
+				CF4658351D586C0A0034CBE5 /* User */,
+				CF4658391D586C420034CBE5 /* Vehicles */,
+				CF4658361D586C200034CBE5 /* Cards */,
+				CF4658371D586C2D0034CBE5 /* Oreders */,
+				CF4658381D586C3D0034CBE5 /* Payment */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF46582A1D5869B20034CBE5 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				CF6EF9781D6592D1004CBC05 /* KeyChain Wrapper */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		CF46582B1D5869BD0034CBE5 /* NetWorkWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				CF234E221D59BB1B00DC0AE6 /* NetworkWrapper.h */,
+				CF234E231D59BB1B00DC0AE6 /* NetworkWrapper.m */,
+				CF234E241D59BB1B00DC0AE6 /* ServiceModel.h */,
+				CF234E251D59BB1B00DC0AE6 /* ServiceModel.m */,
+			);
+			name = NetWorkWrapper;
+			sourceTree = "<group>";
+		};
+		CF46582C1D5869C70034CBE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B2FC91D6C42CB00B786E7 /* Orders */,
+				CF234E091D599D6200DC0AE6 /* Model */,
+				CF46583C1D5887620034CBE5 /* vehicles */,
+				CF46583B1D58875B0034CBE5 /* User */,
+				CF46583A1D5887540034CBE5 /* Cards */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CF46582D1D5869D40034CBE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF46582E1D5869DD0034CBE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF234E171D59BA5E00DC0AE6 /* Swift */,
+				CF234E161D59BA5800DC0AE6 /* Obj-C */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CF46582F1D5869E80034CBE5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CF234E151D59BA4C00DC0AE6 /* Swift */,
+				CF234E111D59B09B00DC0AE6 /* Obj-C */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		CF4658301D5869FC0034CBE5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CF4658041D58666B0034CBE5 /* LaunchScreen.storyboard */,
+				CF4657FF1D58666B0034CBE5 /* Main.storyboard */,
+				1434FCC01D6B1DA4000F744F /* Fuelster_Vehicle.storyboard */,
+				22F555471D6B2242009EB9DF /* PaymentCard.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		CF4658351D586C0A0034CBE5 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CF54B9391D59E1CC00A96B50 /* Fuelster_LoginVC.swift */,
+				CF54B93D1D59E2E600A96B50 /* Fuelster_RegistrationVC.swift */,
+				CF4149281D66F74D0046584C /* Fuelster_ForgotPasswordVC.swift */,
+				CF41492C1D66FC320046584C /* Fuelster_UserProfileVC.swift */,
+				CF4149341D66FF430046584C /* Fuelster_MenuVC.swift */,
+				CF7B2FC31D6C2DC500B786E7 /* Fuelster_SettingsVC.swift */,
+				CF7B2FD41D6C61AC00B786E7 /* Fuelster_HelpVC.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		CF4658361D586C200034CBE5 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				22F5554B1D6B24F7009EB9DF /* PaymentCardsVC.swift */,
+				22F555531D6C559C009EB9DF /* CardsCustomCell.swift */,
+				22F555551D6C55E4009EB9DF /* CardsCustomCell.xib */,
+			);
+			name = Cards;
+			sourceTree = "<group>";
+		};
+		CF4658371D586C2D0034CBE5 /* Oreders */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B2FC71D6C415500B786E7 /* Fuelster_OrderHistoryVC.swift */,
+			);
+			name = Oreders;
+			sourceTree = "<group>";
+		};
+		CF4658381D586C3D0034CBE5 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		CF4658391D586C420034CBE5 /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				1434FCBE1D6B1B90000F744F /* Fuelster_VehiclesListVC.swift */,
+			);
+			name = Vehicles;
+			sourceTree = "<group>";
+		};
+		CF46583A1D5887540034CBE5 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				CF45581D1D6440B00079AD2E /* CardsModel.swift */,
+				CF45581F1D6440C20079AD2E /* Card.swift */,
+			);
+			name = Cards;
+			sourceTree = "<group>";
+		};
+		CF46583B1D58875B0034CBE5 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CF45581B1D6440990079AD2E /* User.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		CF46583C1D5887620034CBE5 /* vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				CF4558171D6437BB0079AD2E /* VehicleModel.swift */,
+				CF4558191D6437CE0079AD2E /* Vehicle.swift */,
+			);
+			name = vehicles;
+			sourceTree = "<group>";
+		};
+		CF4658451D5892BB0034CBE5 /* Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				CF234E381D59C19100DC0AE6 /* Fuelster-Swift.h */,
+				CF234E3A1D59D1EF00DC0AE6 /* Fuelster-Bridging-Header.h */,
+			);
+			name = Bridging;
+			sourceTree = "<group>";
+		};
+		CF46584F1D58945D0034CBE5 /* MBProgressHud */ = {
+			isa = PBXGroup;
+			children = (
+				CF234E3B1D59D2DD00DC0AE6 /* MBProgressHUD.h */,
+				CF234E3C1D59D2DD00DC0AE6 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHud;
+			sourceTree = "<group>";
+		};
+		CF6EF9781D6592D1004CBC05 /* KeyChain Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				CF6EF9791D65930D004CBC05 /* KeychainOptions.swift */,
+				CF6EF97A1D65930D004CBC05 /* KeychainWrapper.swift */,
+				CF6EF97B1D65930D004CBC05 /* KeychainWrapper+Experimental.swift */,
+				CF6EF97C1D65930D004CBC05 /* RBAKeyChainWrapper.swift */,
+				CF6EF97D1D65930D004CBC05 /* SwiftKeychainWrapper.h */,
+			);
+			name = "KeyChain Wrapper";
+			sourceTree = "<group>";
+		};
+		CF6EF9841D659440004CBC05 /* ASRatingView */ = {
+			isa = PBXGroup;
+			children = (
+				CF6EF9851D659458004CBC05 /* ASStarRatingView.h */,
+				CF6EF9861D659458004CBC05 /* ASStarRatingView.m */,
+				CF6EF9881D659467004CBC05 /* half_selected_star.png */,
+				CF6EF9891D659467004CBC05 /* half_selected_star@2x.png */,
+				CF6EF98A1D659467004CBC05 /* not_selected_star.png */,
+				CF6EF98B1D659467004CBC05 /* not_selected_star@2x.png */,
+				CF6EF98C1D659467004CBC05 /* selected_star.png */,
+				CF6EF98D1D659467004CBC05 /* selected_star@2x.png */,
+			);
+			name = ASRatingView;
+			sourceTree = "<group>";
+		};
+		CF6EF9A01D65C0EE004CBC05 /* keyboardScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				CF6EF99A1D65C0E8004CBC05 /* TPKeyboardAvoidingScrollView.h */,
+				CF6EF99B1D65C0E8004CBC05 /* TPKeyboardAvoidingScrollView.m */,
+				CF6EF99D1D65C0E8004CBC05 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				CF6EF99C1D65C0E8004CBC05 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+			);
+			name = keyboardScrollView;
+			sourceTree = "<group>";
+		};
+		CF7B2FC91D6C42CB00B786E7 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B2FCA1D6C42E600B786E7 /* OrdersModel.swift */,
+				CF7B2FCC1D6C431000B786E7 /* Order.swift */,
+			);
+			name = Orders;
+			sourceTree = "<group>";
+		};
+		CF7B3C381D5B016000747930 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CF06B0171D6B1E7800ABD9EF /* Fuelster_MainVC.swift */,
+				CF54B93F1D59ED1F00A96B50 /* SlideMenuController.swift */,
+				CF54B93B1D59E1F600A96B50 /* RBAAlertController.swift */,
+				CF4658331D586ABC0034CBE5 /* Fuelster_BaseViewController.swift */,
+				CF41492A1D66FAA80046584C /* Fuelster_MainNavigationVC.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		CF7B3C391D5B016B00747930 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CF54B9251D59DF2D00A96B50 /* Fuelster_Constants.swift */,
+				CF4657FB1D58666B0034CBE5 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CF7B3C3A1D5B032400747930 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B3C831D5B3F8400747930 /* GoogleMapView.h */,
+				CF7B3C841D5B3F8400747930 /* GoogleMapView.m */,
+			);
+			name = GoogleMaps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF4657F71D58666B0034CBE5 /* Fuelster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4658201D58666B0034CBE5 /* Build configuration list for PBXNativeTarget "Fuelster" */;
+			buildPhases = (
+				6EA21B01CE278B8B5A3C7B8D /* [CP] Check Pods Manifest.lock */,
+				CF4657F41D58666B0034CBE5 /* Sources */,
+				CF4657F51D58666B0034CBE5 /* Frameworks */,
+				CF4657F61D58666B0034CBE5 /* Resources */,
+				E282BBA7B766093C4F1EFF37 /* [CP] Embed Pods Frameworks */,
+				B9164465E15A5D7BD9611F74 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fuelster;
+			productName = Fuelster;
+			productReference = CF4657F81D58666B0034CBE5 /* Fuelster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF46580B1D58666B0034CBE5 /* FuelsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4658231D58666B0034CBE5 /* Build configuration list for PBXNativeTarget "FuelsterTests" */;
+			buildPhases = (
+				9801AF5AB9F0F6BC40BEBB64 /* [CP] Check Pods Manifest.lock */,
+				CF4658081D58666B0034CBE5 /* Sources */,
+				CF4658091D58666B0034CBE5 /* Frameworks */,
+				CF46580A1D58666B0034CBE5 /* Resources */,
+				F15550C59B724BE6A0BA5D7F /* [CP] Embed Pods Frameworks */,
+				AD1B76913EC6D466DF85D411 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF46580E1D58666B0034CBE5 /* PBXTargetDependency */,
+			);
+			name = FuelsterTests;
+			productName = FuelsterTests;
+			productReference = CF46580C1D58666B0034CBE5 /* FuelsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF4658161D58666B0034CBE5 /* FuelsterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4658261D58666B0034CBE5 /* Build configuration list for PBXNativeTarget "FuelsterUITests" */;
+			buildPhases = (
+				474369B216B7FE53AE5B145D /* [CP] Check Pods Manifest.lock */,
+				CF4658131D58666B0034CBE5 /* Sources */,
+				CF4658141D58666B0034CBE5 /* Frameworks */,
+				CF4658151D58666B0034CBE5 /* Resources */,
+				5E5FF385D968DC9ACD24243F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF4658191D58666B0034CBE5 /* PBXTargetDependency */,
+			);
+			name = FuelsterUITests;
+			productName = FuelsterUITests;
+			productReference = CF4658171D58666B0034CBE5 /* FuelsterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF4657F01D58666B0034CBE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = RBA;
+				TargetAttributes = {
+					CF4657F71D58666B0034CBE5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					CF46580B1D58666B0034CBE5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CF4657F71D58666B0034CBE5;
+					};
+					CF4658161D58666B0034CBE5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CF4657F71D58666B0034CBE5;
+					};
+				};
+			};
+			buildConfigurationList = CF4657F31D58666B0034CBE5 /* Build configuration list for PBXProject "Fuelster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF4657EF1D58666B0034CBE5;
+			productRefGroup = CF4657F91D58666B0034CBE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF4657F71D58666B0034CBE5 /* Fuelster */,
+				CF46580B1D58666B0034CBE5 /* FuelsterTests */,
+				CF4658161D58666B0034CBE5 /* FuelsterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF4657F61D58666B0034CBE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4658061D58666B0034CBE5 /* LaunchScreen.storyboard in Resources */,
+				22F555561D6C55E4009EB9DF /* CardsCustomCell.xib in Resources */,
+				1434FCC11D6B1DA4000F744F /* Fuelster_Vehicle.storyboard in Resources */,
+				CF6EF98E1D659467004CBC05 /* half_selected_star.png in Resources */,
+				CF6EF98F1D659467004CBC05 /* half_selected_star@2x.png in Resources */,
+				CF4658031D58666B0034CBE5 /* Assets.xcassets in Resources */,
+				CF6EF9911D659467004CBC05 /* not_selected_star@2x.png in Resources */,
+				14F146251D6C2BEF000F1814 /* Fuelster_VehicleListCell.xib in Resources */,
+				CF6EF9901D659467004CBC05 /* not_selected_star.png in Resources */,
+				CF7B2FD11D6C4C1D00B786E7 /* OrderHistoryCell.xib in Resources */,
+				CF6EF9921D659467004CBC05 /* selected_star.png in Resources */,
+				22F555481D6B2242009EB9DF /* PaymentCard.storyboard in Resources */,
+				CF4658011D58666B0034CBE5 /* Main.storyboard in Resources */,
+				CF6EF9931D659467004CBC05 /* selected_star@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF46580A1D58666B0034CBE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4658151D58666B0034CBE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		474369B216B7FE53AE5B145D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E5FF385D968DC9ACD24243F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelsterUITests/Pods-FuelsterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EA21B01CE278B8B5A3C7B8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9801AF5AB9F0F6BC40BEBB64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1B76913EC6D466DF85D411 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelsterTests/Pods-FuelsterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9164465E15A5D7BD9611F74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fuelster/Pods-Fuelster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E282BBA7B766093C4F1EFF37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fuelster/Pods-Fuelster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F15550C59B724BE6A0BA5D7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelsterTests/Pods-FuelsterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF4657F41D58666B0034CBE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF54B9261D59DF2D00A96B50 /* Fuelster_Constants.swift in Sources */,
+				22F555541D6C559C009EB9DF /* CardsCustomCell.swift in Sources */,
+				CF41492D1D66FC320046584C /* Fuelster_UserProfileVC.swift in Sources */,
+				CF7B2FCB1D6C42E600B786E7 /* OrdersModel.swift in Sources */,
+				CF234E211D59BB0100DC0AE6 /* Model.swift in Sources */,
+				CF4558201D6440C20079AD2E /* Card.swift in Sources */,
+				22F5554C1D6B24F7009EB9DF /* PaymentCardsVC.swift in Sources */,
+				CF54B92F1D59DF9500A96B50 /* O1AlertController.m in Sources */,
+				CF4558231D648C5B0079AD2E /* NSMutableURLRequest+NSMutableRequestHeaders.m in Sources */,
+				CF7B2FC41D6C2DC500B786E7 /* Fuelster_SettingsVC.swift in Sources */,
+				CF4657FC1D58666B0034CBE5 /* AppDelegate.swift in Sources */,
+				CF54B9401D59ED1F00A96B50 /* SlideMenuController.swift in Sources */,
+				CF54B93C1D59E1F600A96B50 /* RBAAlertController.swift in Sources */,
+				CF7B2FD51D6C61AC00B786E7 /* Fuelster_HelpVC.swift in Sources */,
+				CF6EF9801D65930D004CBC05 /* KeychainWrapper+Experimental.swift in Sources */,
+				CF6EF99E1D65C0E8004CBC05 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				CF4658341D586ABC0034CBE5 /* Fuelster_BaseViewController.swift in Sources */,
+				CF4558181D6437BB0079AD2E /* VehicleModel.swift in Sources */,
+				CF45581A1D6437CE0079AD2E /* Vehicle.swift in Sources */,
+				CF45581E1D6440B00079AD2E /* CardsModel.swift in Sources */,
+				CF4149351D66FF430046584C /* Fuelster_MenuVC.swift in Sources */,
+				CF6EF9811D65930D004CBC05 /* RBAKeyChainWrapper.swift in Sources */,
+				CF6EF9871D659458004CBC05 /* ASStarRatingView.m in Sources */,
+				CF4149291D66F74D0046584C /* Fuelster_ForgotPasswordVC.swift in Sources */,
+				CF6EF99F1D65C0E8004CBC05 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				CF06B0181D6B1E7800ABD9EF /* Fuelster_MainVC.swift in Sources */,
+				14F146241D6C2BEF000F1814 /* Fuelster_VehicleListCell.swift in Sources */,
+				CF234E1D1D59BA6D00DC0AE6 /* ViewController_ext.swift in Sources */,
+				CF234E321D59BE3C00DC0AE6 /* UIDevice+Hardware.m in Sources */,
+				CF234E1C1D59BA6D00DC0AE6 /* View_ext.swift in Sources */,
+				CF54B92E1D59DF9500A96B50 /* O1AlertAction.m in Sources */,
+				1434FCBF1D6B1B90000F744F /* Fuelster_VehiclesListVC.swift in Sources */,
+				CF6EF97E1D65930D004CBC05 /* KeychainOptions.swift in Sources */,
+				CF6EF97F1D65930D004CBC05 /* KeychainWrapper.swift in Sources */,
+				CF234E261D59BB1B00DC0AE6 /* NetworkWrapper.m in Sources */,
+				CF7B2FC81D6C415500B786E7 /* Fuelster_OrderHistoryVC.swift in Sources */,
+				CF41492B1D66FAA80046584C /* Fuelster_MainNavigationVC.swift in Sources */,
+				CF7B3C851D5B3F8400747930 /* GoogleMapView.m in Sources */,
+				CF234E3D1D59D2DD00DC0AE6 /* MBProgressHUD.m in Sources */,
+				CF234E1B1D59BA6D00DC0AE6 /* TextField_ext.swift in Sources */,
+				CF54B93A1D59E1CC00A96B50 /* Fuelster_LoginVC.swift in Sources */,
+				CF7B2FCD1D6C431000B786E7 /* Order.swift in Sources */,
+				CF7B2FD01D6C4C1D00B786E7 /* OrderHistoryCell.swift in Sources */,
+				CF54B93E1D59E2E600A96B50 /* Fuelster_RegistrationVC.swift in Sources */,
+				CF54B9301D59DF9500A96B50 /* O1LocationManager.m in Sources */,
+				CF234E271D59BB1B00DC0AE6 /* ServiceModel.m in Sources */,
+				CF45581C1D6440990079AD2E /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4658081D58666B0034CBE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4658111D58666B0034CBE5 /* FuelsterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4658131D58666B0034CBE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF46581C1D58666B0034CBE5 /* FuelsterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF46580E1D58666B0034CBE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4657F71D58666B0034CBE5 /* Fuelster */;
+			targetProxy = CF46580D1D58666B0034CBE5 /* PBXContainerItemProxy */;
+		};
+		CF4658191D58666B0034CBE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4657F71D58666B0034CBE5 /* Fuelster */;
+			targetProxy = CF4658181D58666B0034CBE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF4657FF1D58666B0034CBE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF4658001D58666B0034CBE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF4658041D58666B0034CBE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF4658051D58666B0034CBE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF46581E1D58666B0034CBE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF46581F1D58666B0034CBE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF4658211D58666B0034CBE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE111D56FD98083A79576313 /* Pods-Fuelster.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Fuelster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RBA.Fuelster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fuelster/Fuelster-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF4658221D58666B0034CBE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F68564165C54A6C4B57A111 /* Pods-Fuelster.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Fuelster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RBA.Fuelster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fuelster/Fuelster-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		CF4658241D58666B0034CBE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296710C2BDE860E647776D5B /* Pods-FuelsterTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FuelsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RBA.FuelsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuelster.app/Fuelster";
+			};
+			name = Debug;
+		};
+		CF4658251D58666B0034CBE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16FE5EC0A981ABD0B2F4628F /* Pods-FuelsterTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FuelsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RBA.FuelsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fuelster.app/Fuelster";
+			};
+			name = Release;
+		};
+		CF4658271D58666B0034CBE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D3190709AC069820CF0F92B /* Pods-FuelsterUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FuelsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RBA.FuelsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fuelster;
+			};
+			name = Debug;
+		};
+		CF4658281D58666B0034CBE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11AB35466592E3707D52D089 /* Pods-FuelsterUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FuelsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RBA.FuelsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fuelster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF4657F31D58666B0034CBE5 /* Build configuration list for PBXProject "Fuelster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF46581E1D58666B0034CBE5 /* Debug */,
+				CF46581F1D58666B0034CBE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF4658201D58666B0034CBE5 /* Build configuration list for PBXNativeTarget "Fuelster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4658211D58666B0034CBE5 /* Debug */,
+				CF4658221D58666B0034CBE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF4658231D58666B0034CBE5 /* Build configuration list for PBXNativeTarget "FuelsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4658241D58666B0034CBE5 /* Debug */,
+				CF4658251D58666B0034CBE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF4658261D58666B0034CBE5 /* Build configuration list for PBXNativeTarget "FuelsterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4658271D58666B0034CBE5 /* Debug */,
+				CF4658281D58666B0034CBE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF4657F01D58666B0034CBE5 /* Project object */;
+}

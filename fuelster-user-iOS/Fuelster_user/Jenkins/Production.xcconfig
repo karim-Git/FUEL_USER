@@ -1,0 +1,20 @@
+//
+//  Production.xcconfig
+//  JenkinConfig
+//
+//  Created by Prasad on 7/7/16.
+//  Copyright © 2016 rapidBizApps. All rights reserved.
+//
+//
+
+Parse_Application_Id = "jhVOSGaBmviBf2IK0ljuPbMtyfRFpQKVJSWEoF8R"
+Parse_Client_Key = "V10vMIVvca5M1qLQG2XgJmxf1eS2aDAMoVTq3JdQ"
+
+BUILD_NUMBER = 1
+BUNDLE_IDENTIFIER = com.rapidBizApps.FuelsterUser
+Flurry_Key = "HD46YGR9ZQR8JTRB3XJQ"
+
+
+GCC_PREPROCESSOR_DEFINITIONS =  VERSION_NUMBER=@\"$(VERSION_NUMBER)\"  Flurry_Key=@\"$(Flurry_Key)\" BUNDLE_IDENTIFIER=@\"$(BUNDLE_IDENTIFIER)\"  
+
+

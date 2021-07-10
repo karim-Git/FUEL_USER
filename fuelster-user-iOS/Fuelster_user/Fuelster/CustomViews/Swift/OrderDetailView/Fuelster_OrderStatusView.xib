@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Fuelster_OrderStatusView" customModule="Fuelster" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Time Slot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ww-tE-Lp2">
+                    <rect key="frame" x="8" y="24" width="124" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="etd-Zg-fU6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:00 pm - 4:00 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-eb-rCw">
+                    <rect key="frame" x="8" y="65" width="124" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="icS-dS-Rz3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31s-EB-3GY">
+                    <rect key="frame" x="152" y="24" width="47" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="Ib9-J9-Gzb"/>
+                        <constraint firstAttribute="height" constant="21" id="ljk-V0-hJK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 gal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uO-iF-EHj">
+                    <rect key="frame" x="152" y="65" width="47" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="kfk-wU-erU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Price" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amS-tP-iwy">
+                    <rect key="frame" x="216" y="24" width="92" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="92" id="TXI-XL-1vz"/>
+                        <constraint firstAttribute="height" constant="21" id="wmB-CV-hZm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mh-6w-7Up">
+                    <rect key="frame" x="216" y="65" width="92" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Ifu-KK-GKQ"/>
+                        <constraint firstAttribute="width" constant="92" id="gwC-Cd-EXB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="31s-EB-3GY" firstAttribute="leading" secondItem="2ww-tE-Lp2" secondAttribute="trailing" constant="20" id="4qg-5B-5jp"/>
+                <constraint firstItem="Eeo-eb-rCw" firstAttribute="top" secondItem="2ww-tE-Lp2" secondAttribute="bottom" constant="20" id="7b3-hB-eNH"/>
+                <constraint firstItem="1uO-iF-EHj" firstAttribute="top" secondItem="31s-EB-3GY" secondAttribute="bottom" constant="20" id="98y-dM-wDF"/>
+                <constraint firstItem="1Mh-6w-7Up" firstAttribute="leading" secondItem="amS-tP-iwy" secondAttribute="leading" id="AgT-GM-KfK"/>
+                <constraint firstAttribute="trailing" secondItem="amS-tP-iwy" secondAttribute="trailing" constant="12" id="DzV-Jf-8ON"/>
+                <constraint firstItem="1uO-iF-EHj" firstAttribute="leading" secondItem="31s-EB-3GY" secondAttribute="leading" id="F2d-AR-90E"/>
+                <constraint firstItem="2ww-tE-Lp2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="Grx-1S-v9t"/>
+                <constraint firstItem="31s-EB-3GY" firstAttribute="leading" secondItem="2ww-tE-Lp2" secondAttribute="trailing" constant="20" id="Lyt-UM-8sE"/>
+                <constraint firstItem="1Mh-6w-7Up" firstAttribute="top" secondItem="amS-tP-iwy" secondAttribute="bottom" constant="20" id="PaT-ra-xKq"/>
+                <constraint firstItem="1Mh-6w-7Up" firstAttribute="trailing" secondItem="amS-tP-iwy" secondAttribute="trailing" id="bOG-8o-ITA"/>
+                <constraint firstItem="Eeo-eb-rCw" firstAttribute="trailing" secondItem="2ww-tE-Lp2" secondAttribute="trailing" id="hCG-gj-rEK"/>
+                <constraint firstItem="1uO-iF-EHj" firstAttribute="trailing" secondItem="31s-EB-3GY" secondAttribute="trailing" id="mYz-s2-Iu0"/>
+                <constraint firstItem="amS-tP-iwy" firstAttribute="leading" secondItem="31s-EB-3GY" secondAttribute="trailing" constant="17" id="o3M-Ua-rNw"/>
+                <constraint firstItem="2ww-tE-Lp2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="pmE-yW-sGf"/>
+                <constraint firstItem="amS-tP-iwy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="qHJ-At-aA8"/>
+                <constraint firstItem="31s-EB-3GY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="wEv-Ol-cwC"/>
+                <constraint firstItem="Eeo-eb-rCw" firstAttribute="leading" secondItem="2ww-tE-Lp2" secondAttribute="leading" id="ymq-Xv-ld3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="orderDeliveryLbl" destination="Eeo-eb-rCw" id="kl0-ev-hYl"/>
+                <outlet property="orderEstimatedPriceLbl" destination="1Mh-6w-7Up" id="3LA-0W-kXA"/>
+                <outlet property="orderQunatityLbl" destination="1uO-iF-EHj" id="oTI-e5-ADO"/>
+            </connections>
+            <point key="canvasLocation" x="201" y="25"/>
+        </view>
+    </objects>
+</document>
